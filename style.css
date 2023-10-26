@@ -11,8 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
-  margin-top: 20px;
+  margin:20px 50px 0 0;
 }
 
 .header__logo {
@@ -44,7 +43,7 @@
   text-decoration: none;
 }
 
-..header__nav_icon {
+.header__nav_icon {
   display: none;
 }
 
@@ -95,6 +94,7 @@
 
 
 
+
 /* top */
 .top__logo {
   width: 30%;
@@ -124,8 +124,6 @@
     }
   }
 
-
-
 .top__pictuer {
   width: 100%;
 }
@@ -133,6 +131,8 @@
   width: 100%;
   object-fit: cover;
 }
+
+
 
 
 /* guidance */
@@ -146,18 +146,19 @@
   font-size: 16px;
 }
 
+.guidance__text_box {
+  text-align: center;
+}
 .guidance__title {
   margin-top: 20px;
   font-size: 44px;
   line-height: 40px;
-  text-align: center;
 }
 
 .guidance__text {
-  margin-top: 20px;
+  padding-top: 20px;
   font-size: 18px;
   line-height: 40px;
-  text-align: center;
 }
 
 .guidance__box {
@@ -207,8 +208,32 @@
 
 /* guidance sp */
 @media screen and (max-width: 768px) {
+  .guidance {
+    margin-top: 100px;
+  }
+
+  .guidance__box {
+    margin-top: 50px;
+  }
+
+  .guidance__title {
+    margin-top: 70px;
+  }
+
+  .guidance__text {
+    padding: 70px 40px 40px;
+    letter-spacing: 7px;
+    text-align: left;
+  }
+
+  .guidance__text span {
+    display: none;
+  }
+
 
 }
+
+
 
 /* curriculum */
 .curriculum{
@@ -269,6 +294,8 @@
   display: block;
 }
 
+
+/* curriculum sp */
 @media screen and (max-width: 768px) {
   .curriculum{
     position: static;
@@ -306,6 +333,7 @@
 }
 
 
+
 /* recruitment */
 .recruitment {
   display: flex;
@@ -322,7 +350,8 @@
   font-size: 8rem;
   font-family: La Belle Aurore,cursive;
   opacity: .3;
-  margin: 0;position: absolute;
+  margin: 0;
+  position: absolute;
   top: 10%;
   left: 10%;
   color: #fff;
@@ -380,7 +409,7 @@
 }
 
 
-
+/* recruitment sp */
 @media screen and (max-width: 768px) {
   .recruitment__box1_text {
     font-size: 3rem;
@@ -396,11 +425,9 @@
   .recruitment__title2 {
     font-size: 1rem;
   }
-
-  .guidance__text {
-    padding: 20px;
-  }
 }
+
+
 
 /* footer */
 .footer {
@@ -434,6 +461,7 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin-bottom: 300px;
 }
 
 .footer__text a {
@@ -441,6 +469,8 @@
   margin-top: 10px;
 }
 
+
+/* footer sp */
 @media screen and (max-width: 768px) {
   .footer__box {
     display: block;
